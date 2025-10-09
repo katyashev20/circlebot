@@ -7,7 +7,9 @@ from aiogram.types import Message, FSInputFile
 from aiogram.filters import CommandStart
 
 # 🔑 Твой токен
-TOKEN = "8466847169:AAHiFvi86o9XnL_YiqBlFrkPeMZHmFwY-Hw"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
+
 
 # 🔧 Создаём бота и диспетчер
 bot = Bot(token=TOKEN)
