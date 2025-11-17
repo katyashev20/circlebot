@@ -1,12 +1,6 @@
 [build]
 builder = "NIXPACKS"
-
-[build.nixpacks]
-# Вот оно, изменение: aptPkgs -> nixPkgs
 nixPkgs = ["ffmpeg"]
-
-[build.nixpacks.variables]
-PYTHON_VERSION = "3.12"
 
 [deploy]
 startCommand = "python bot.py"
