@@ -2,7 +2,8 @@
 builder = "NIXPACKS"
 
 [build.nixpacks]
-aptPkgs = ["ffmpeg"]
+# Вот оно, изменение: aptPkgs -> nixPkgs
+nixPkgs = ["ffmpeg"]
 
 [build.nixpacks.variables]
 PYTHON_VERSION = "3.12"
