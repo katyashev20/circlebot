@@ -6,3 +6,6 @@ aptPkgs = ["ffmpeg"]
 
 [build.nixpacks.variables]
 PYTHON_VERSION = "3.12"
+
+[deploy]
+startCommand = "python bot.py"
