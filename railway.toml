@@ -1,7 +1,0 @@
-[build]
-builder = "NIXPACKS"
-# Меняем nixPkgs обратно на aptPkgs
-aptPkgs = ["ffmpeg"]
-
-[deploy]
-startCommand = "python bot.py"
